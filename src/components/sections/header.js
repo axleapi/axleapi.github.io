@@ -27,14 +27,14 @@ const Header = () => {
       <Container>
         <Flex>
           <HeaderTextGroup>
-            <Subtitle>Personal Finance</Subtitle>
+            <Subtitle>Automotive API</Subtitle>
             <h1>
-              All your money,
+              One line of code to
               <br />
-              one account
+              turn a vehicle into a platform
             </h1>
             <h2>
-              We're building next generation personal finance tools. Sign up to
+              Axle enables developers to securely access vehicle controls and diagnostics with just a single line of code. Sign up to
               get early access.
             </h2>
             <HeaderForm onSubmit={handleSubmit}>
