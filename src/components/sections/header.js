@@ -37,9 +37,11 @@ const Header = () => {
               Axle enables developers to securely access vehicle controls and diagnostics with just a single line of code. Sign up to
               get early access.
             </h2>
-            <HeaderForm onSubmit={handleSubmit}>
-              <HeaderInput placeholder="Your email" />
-              <HeaderButton>Early access</HeaderButton>
+            <HeaderForm action="https://axleapi.us5.list-manage.com/subscribe/post" method="POST">
+              <HeaderInput type="email" placeholder="Your email" name="MERGE0" />
+              <input type="hidden" name="u" value="af040f8e3758731e861dd6dff"></input>
+              <input type="hidden" name="id" value="b89840b17a"></input>
+              <HeaderButton type="submit">Early access</HeaderButton>
             </HeaderForm>
             <FormSubtitle>
               Already have a beta account?{" "}
@@ -55,7 +57,6 @@ const Header = () => {
     </HeaderWrapper>
   )
 }
-
 export default Header
 
 const HeaderWrapper = styled.header`
@@ -111,7 +112,7 @@ const Flex = styled.div`
   }
 `
 
-const HeaderForm = styled.form`
+export const HeaderForm = styled.form`
   display: flex;
   flex-direction: row;
   padding-bottom: 16px;
@@ -133,7 +134,7 @@ const FormSubtitleLink = styled(Link)`
   border-bottom: 1px solid ${props => props.theme.color.secondary};
 `
 
-const HeaderInput = styled.input`
+export const HeaderInput = styled.input`
   font-weight: 500;
   font-size: 16px;
   color: ${props => props.theme.color.primary};
@@ -160,7 +161,7 @@ const HeaderInput = styled.input`
   }
 `
 
-const HeaderButton = styled.button`
+export const HeaderButton = styled.button`
   font-weight: 500;
   font-size: 14px;
   color: white;

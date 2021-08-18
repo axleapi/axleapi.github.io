@@ -2,12 +2,18 @@ import React from "react"
 import styled from "styled-components"
 
 import { Container, Section } from "../global"
+import { HeaderForm, HeaderButton, HeaderInput } from "./header"
 
 const GetStarted = () => (
   <StyledSection>
     <GetStartedContainer id="get started">
       <GetStartedTitle>Be the first to get the beta</GetStartedTitle>
-      <TryItButton>Get early access</TryItButton>
+      <HeaderForm action="https://axleapi.us5.list-manage.com/subscribe/post" method="POST">
+        <HeaderInput type="email" placeholder="Your email" name="MERGE0" />
+        <input type="hidden" name="u" value="af040f8e3758731e861dd6dff"></input>
+        <input type="hidden" name="id" value="b89840b17a"></input>
+        <HeaderButton type="submit">Early access</HeaderButton>
+      </HeaderForm>
       <Subtitle>No credit card required.</Subtitle>
     </GetStartedContainer>
   </StyledSection>

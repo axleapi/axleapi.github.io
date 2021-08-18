@@ -16,7 +16,7 @@ import {
   ActionsContainer,
 } from "./style"
 
-const NAV_ITEMS = ["Features", "Product", "Get Started", ""]
+const NAV_ITEMS = ["Features", "Product", "Solutions", "Get Started"]
 
 export default class Navigation extends Component {
   state = {
@@ -96,9 +96,9 @@ export default class Navigation extends Component {
           </Mobile>
 
           <Mobile hide>{this.getNavList({})}</Mobile>
-          <ActionsContainer>
-            <button>Sign up</button>
-          </ActionsContainer>
+          {/* <ActionsContainer>
+            <button onclick="location.href='#get started';">Early Access</button>
+          </ActionsContainer> */}
         </StyledContainer>
         <Mobile>
           {mobileMenuOpen && (
