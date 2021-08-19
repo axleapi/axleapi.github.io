@@ -43,10 +43,10 @@ const Header = () => {
               <input type="hidden" name="id" value="b89840b17a"></input>
               <HeaderButton type="submit">Early access</HeaderButton>
             </HeaderForm>
-            <FormSubtitle>
+            {/* <FormSubtitle>
               Already have a beta account?{" "}
               <FormSubtitleLink to="/">Sign in</FormSubtitleLink>
-            </FormSubtitle>
+            </FormSubtitle> */}
           </HeaderTextGroup>
           <ImageWrapper>
             <StyledImage fluid={data.file.childImageSharp.fluid} />
@@ -172,7 +172,7 @@ export const HeaderButton = styled.button`
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
-  background: ${props => props.theme.color.secondary};
+  background: ${props => props.theme.color.button};
   border-radius: 4px;
   padding: 0px 40px;
   border-width: 0px;

@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { FaLaptopCode, FaShieldAlt, FaTruckMoving } from 'react-icons/fa';
 
 import { Section, Container } from "../global"
 
@@ -7,44 +8,27 @@ const Product = () => (
   <Section id="product">
     <StyledContainer>
       <Subtitle>Product</Subtitle>
-      <SectionTitle>Smart money management</SectionTitle>
-      <FeaturesGrid>
+      <SectionTitle>Axle unlocks a vehicle's data and controls</SectionTitle>
+      <ProductGrid>
         <FeatureItem>
-          <FeatureTitle>Notifications</FeatureTitle>
+          <FeatureTitle><FaLaptopCode/></FeatureTitle>
           <FeatureText>
-            Receive budget and spending alerts based on your favorite triggers.
+            Reduce development time and costs.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Security</FeatureTitle>
+          <FeatureTitle><FaShieldAlt/></FeatureTitle>
           <FeatureText>
-            Your data is always safe with us as we use the latest security
-            protocols.
+            Secure critical vehicle functions.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Automation</FeatureTitle>
+          <FeatureTitle><FaTruckMoving/></FeatureTitle>
           <FeatureText>
-            Create smart automated workflows and triggers for your money.
+            Enable new vehicle applications.
           </FeatureText>
         </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Aggregation</FeatureTitle>
-          <FeatureText>
-            Easily link up to 5 banks to your finance account.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Payments</FeatureTitle>
-          <FeatureText>Send money to friends and family with ease.</FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Rewards</FeatureTitle>
-          <FeatureText>
-            High interest and rewards for hitting your goals.
-          </FeatureText>
-        </FeatureItem>
-      </FeaturesGrid>
+      </ProductGrid>
     </StyledContainer>
   </Section>
 )
@@ -69,10 +53,10 @@ const Subtitle = styled.h5`
   text-align: center;
 `
 
-const FeaturesGrid = styled.div`
+const ProductGrid = styled.div`
   max-width: 670px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 0px auto;
   grid-column-gap: 40px;
   grid-row-gap: 35px;
@@ -89,7 +73,7 @@ const FeatureItem = styled.div`
   flex-direction: column;
 `
 
-const FeatureTitle = styled.h4`
+const FeatureTitle = styled.h1`
   color: ${props => props.theme.color.primary};
   letter-spacing: 0px;
   line-height: 30px;

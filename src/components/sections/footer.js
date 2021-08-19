@@ -6,8 +6,8 @@ import Logo from "../common/logo"
 
 const Footer = () => (
   <FooterWrapper id="footer">
-    {/* <FooterColumnContainer>
-      <FooterColumn>
+    <FooterColumnContainer>
+      {/* <FooterColumn>
         <span>Features</span>
         <ul>
           <li>Automation</li>
@@ -27,15 +27,15 @@ const Footer = () => (
           <li>About Us</li>
           <li>Careers</li>
         </ul>
-      </FooterColumn>
+      </FooterColumn> */}
       <FooterColumn>
-        <span>Social</span>
+        <span>Contact</span>
         <ul>
-          <li>LinkedIn</li>
-          <li>Instagram</li>
+          <li><StyledA href="mailto:hi@axleapi.com">hi@axleapi.com</StyledA></li>
+          {/* <li>Instagram</li> */}
         </ul>
       </FooterColumn>
-    </FooterColumnContainer> */}
+    </FooterColumnContainer>
     <BrandContainer>
       <Logo />
     </BrandContainer>
@@ -44,6 +44,10 @@ const Footer = () => (
     </Copyright>
   </FooterWrapper>
 )
+
+const StyledA = styled.a`
+  color: ${props => props.theme.color.accent};
+`
 
 const FooterWrapper = styled.footer`
   background-color: white;

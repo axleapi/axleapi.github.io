@@ -3,45 +3,44 @@ import styled from "styled-components"
 
 import { Section, Container } from "../global"
 
-const Features = () => (
-  <Section id="features">
+const Solutions = () => (
+  <Section id="solutions">
     <StyledContainer>
-      <Subtitle>Features</Subtitle>
-      <SectionTitle>Smart money management</SectionTitle>
+      <Subtitle>Solutions</Subtitle>
+      <SectionTitle>Axle enables new use cases</SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
-          <FeatureTitle>Notifications</FeatureTitle>
+          <FeatureTitle>Telematics</FeatureTitle>
           <FeatureText>
-            Receive budget and spending alerts based on your favorite triggers.
+            Axle can enable remote fleet diagnostics and monitoring to maximize vehicle uptime and predictive maintenance.
+          </FeatureText>
+        </FeatureItem>
+        <FeatureItem>
+          <FeatureTitle>Self-Driving</FeatureTitle>
+          <FeatureText>
+            Axle unlocks driving controls such as steering and acceleration for aftermarket self-driving systems.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>Security</FeatureTitle>
           <FeatureText>
-            Your data is always safe with us as we use the latest security
-            protocols.
+            Axle equips the vehicle with an intrusion detection system, identifying and blocking malicious commands.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Automation</FeatureTitle>
+          <FeatureTitle>Entertainment</FeatureTitle>
           <FeatureText>
-            Create smart automated workflows and triggers for your money.
+            Axle can control vehicle infotainment and media systems enabling new forms of entertainment.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Aggregation</FeatureTitle>
-          <FeatureText>
-            Easily link up to 5 banks to your finance account.
-          </FeatureText>
+          <FeatureTitle>Insurance</FeatureTitle>
+          <FeatureText>Axle can help identify the driving style and safety parameters of the vehicle owner.</FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Payments</FeatureTitle>
-          <FeatureText>Send money to friends and family with ease.</FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Rewards</FeatureTitle>
+          <FeatureTitle>Car Sharing</FeatureTitle>
           <FeatureText>
-            High interest and rewards for hitting your goals.
+            Axle allows for remote access and monitoring for a vehicle, simplifying onboarding for car sharing networks.
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>
@@ -49,7 +48,7 @@ const Features = () => (
   </Section>
 )
 
-export default Features
+export default Solutions
 
 const StyledContainer = styled(Container)``
 
@@ -94,6 +93,7 @@ const FeatureTitle = styled.h4`
   letter-spacing: 0px;
   line-height: 30px;
   margin-bottom: 10px;
+  text-align: center;
 `
 
 const FeatureText = styled.p`

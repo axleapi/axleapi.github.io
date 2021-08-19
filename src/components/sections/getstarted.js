@@ -14,7 +14,6 @@ const GetStarted = () => (
         <input type="hidden" name="id" value="b89840b17a"></input>
         <HeaderButton type="submit">Early access</HeaderButton>
       </HeaderForm>
-      <Subtitle>No credit card required.</Subtitle>
     </GetStartedContainer>
   </StyledSection>
 )
