@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { CodeBlock, dracula } from "react-code-blocks";
+import { CodeBlock, tomorrow } from "react-code-blocks";
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 
@@ -21,7 +21,7 @@ const Developers = () => {
 
   return (
     <StyledSection id="developers" >
-      <StyledContainer>
+      <Container>
         <Subtitle>For Developers</Subtitle>
         <SectionTitle>Axle's API unlocks a vehicle's data and controls so developers can build new apps</SectionTitle>
         <DeveloperGrid>
@@ -33,12 +33,12 @@ const Developers = () => {
               text={"import axleapi\n\nveh = axleapi.connect()\n\nprint(veh.oilLevel())"}
               language={"python"}
               showLineNumbers={true}
-              startingLineNumber={0}
-              theme={dracula}
+              theme={tomorrow}
+              customStyle={{width: "300px"}}
             />
           </FeatureItem>
         </DeveloperGrid>
-      </StyledContainer>
+      </Container>
     </StyledSection >
   )
 }
@@ -46,9 +46,6 @@ export default Developers
 
 const StyledSection = styled(Section)`
 background: ${props => props.theme.color.background.light};
-`
-
-const StyledContainer = styled(Container)`
 `
 
 const SectionTitle = styled.h3`
@@ -70,13 +67,13 @@ const Subtitle = styled.h5`
 const DeveloperGrid = styled.div`
   max-width: 1000px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 400px;
   margin: 0px auto;
   grid-column-gap: 40px;
   grid-row-gap: 35px;
   @media (max-width: ${props => props.theme.screen.sm}) {
     grid-template-columns: 1fr;
-    padding: 0 64px;
+    padding: 0 0px;
   }
 `
 
@@ -85,7 +82,9 @@ const FeatureItem = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 500px;
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    width: 300px;
+  }
 `
 
 const StyledImage = styled(Img)`
@@ -95,6 +94,5 @@ const StyledImage = styled(Img)`
   }
   @media (max-width: ${props => props.theme.screen.sm}) {
     width: 300px;
-    display: none;
   }
 `
