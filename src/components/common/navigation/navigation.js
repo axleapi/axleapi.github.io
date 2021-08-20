@@ -73,7 +73,7 @@ export default class Navigation extends Component {
     const { mobileMenuOpen } = this.state
 
     return (
-      <Nav {...this.props} scrolled={this.state.hasScrolled}>
+      <Nav {...this.props} scrolled={this.state.hasScrolled} mobileMenuOpen={this.state.mobileMenuOpen}>
         <StyledContainer>
           <Brand>
             <Scrollspy offset={-64} item={["top"]} currentClassName="active">

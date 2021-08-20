@@ -74,6 +74,7 @@ const DeveloperGrid = styled.div`
   @media (max-width: ${props => props.theme.screen.sm}) {
     grid-template-columns: 1fr;
     padding: 0 0px;
+    justify-items: center;
   }
 `
 

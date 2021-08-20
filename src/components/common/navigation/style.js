@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   width: 100%;
   top: 0;
   z-index: 1000;
-  background: ${props => (props.scrolled ? `white` : null)};
+  background: ${props => ((props.scrolled || props.mobileMenuOpen) ? `white` : null)};
   transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 `
 
@@ -60,7 +60,6 @@ export const NavItem = styled.li`
 
 export const MobileMenu = styled.div`
   width: 100%;
-  height: 100vh;
   z-index: 1000;
   background: ${props => props.theme.color.regular};
 `
