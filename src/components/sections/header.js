@@ -29,9 +29,9 @@ const Header = () => {
           <HeaderTextGroup>
             <Subtitle>Automotive API</Subtitle>
             <h1>
-              One line of code to
+              The easiest way to
               <br />
-              turn a vehicle into a platform
+              securely control and monitor any vehicle
             </h1>
             <h2>
               Axle enables developers to securely access vehicle controls and diagnostics with just a single line of code. Sign up to

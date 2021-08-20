@@ -1,7 +1,7 @@
 {
   "name": "axle",
   "private": true,
-  "description": "Turn any vehicle into whatever you want.",
+  "description": "The easiest way to securely control and monitor any vehicle.",
   "version": "0.1.0",
   "author": "Axle Technologies <hi@axleapi.com>",
   "dependencies": {
@@ -45,7 +45,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
-    "deploy": "gatsby build && gh-pages -d public -b main"
+    "add-domain": "echo \"axleapi.com\" > public/CNAME",
+    "deploy": "gatsby build && npm run add-domain && gh-pages -d public -b main"
   },
   "repository": {
     "type": "git",
