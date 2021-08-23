@@ -1,6 +1,6 @@
 ## ☁️ The Axle Public Webpage.
 
-### Getting started 🍻
+### Getting started
 
 install Gatsby CLI - [more info](https://www.gatsbyjs.org/tutorial/part-zero/)
 
@@ -64,6 +64,3 @@ This starter uses [styled-components](https://www.styled-components.com/). The t
 
 This starter uses [react-anchor-link-smooth-scroll](https://github.com/mauricevancooten/react-anchor-link-smooth-scroll#readme) and [react-scrollspy](https://github.com/makotot/react-scrollspy).
 To link a navigation item to a section simply add an id and string value to a section parent element that corresponds to the same navigation string value in `navigation.js`
-<br>
-<br>
-⚠️ Only the `Features` section is linked. Product and Pricing sections are intentionally not linked and will throw a `TypeError` in the console when clicked (because they do not exist in the starter). Please reach out if you want help extending this feature.

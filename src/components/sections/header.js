@@ -27,14 +27,11 @@ const Header = () => {
       <Container>
         <Flex>
           <HeaderTextGroup>
-            <Subtitle>Automotive API</Subtitle>
             <h1>
-              The easiest way to
-              <br />
-              securely control and monitor any vehicle
+              Universal API to securely control and monitor any vehicle
             </h1>
             <h2>
-              Axle enables developers to securely access vehicle controls and diagnostics with just a single line of code. Sign up to
+              Axle's API lets developers securely and universally access vehicle controls and diagnostics. Sign up to
               get early access.
             </h2>
             <HeaderForm action="https://axleapi.us5.list-manage.com/subscribe/post" method="POST">
@@ -64,7 +61,8 @@ const HeaderWrapper = styled.header`
   padding: 160px 0 80px 0;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
-  @media (max-width: ${props => props.theme.screen.md}) {
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    padding: 120px 0 0;
   }
 `
 const Subtitle = styled.h5`

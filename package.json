@@ -1,7 +1,7 @@
 {
   "name": "axle",
   "private": true,
-  "description": "The easiest way to securely control and monitor any vehicle.",
+  "description": "Universal API to securely control and monitor any vehicle.",
   "version": "0.1.0",
   "author": "Axle Technologies <hi@axleapi.com>",
   "dependencies": {
