@@ -6,7 +6,7 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import { Section, Container } from "../global"
 
-const Developers = () => {
+const DevelopersClimate = () => {
   const data = useStaticQuery(graphql`
     query {
       file(sourceInstanceName: { eq: "product" }, name: { eq: "product diagram" }) {
@@ -30,7 +30,7 @@ const Developers = () => {
           </FeatureItem>
           <FeatureItem>
             <CodeBlock
-              text={"import axleapi\n\nveh = axleapi.connect()\n\nprint(veh.route.oilLevel())"}
+              text={"import axleapi\n\nveh = axleapi.connect()\n\nprint(veh.route.calculate_co2())"}
               language={"python"}
               showLineNumbers={true}
               theme={tomorrow}
@@ -42,7 +42,7 @@ const Developers = () => {
     </StyledSection >
   )
 }
-export default Developers
+export default DevelopersClimate
 
 const StyledSection = styled(Section)`
 background: ${props => props.theme.color.background.light};
