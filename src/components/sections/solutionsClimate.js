@@ -36,7 +36,7 @@ const SolutionsClimate = () => (
         <FeatureItem>
           <FeatureTitle>Logistics</FeatureTitle>
           <FeatureText>
-            Axle allows for remote access and navigation of vehicles, even from afar.
+            Axle provides insight into the the shipping and delivery of packages on vehicles.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
