@@ -3,44 +3,46 @@ import styled from "styled-components"
 
 import { Section, Container } from "../global"
 
-const Solutions = () => (
+const SolutionsClimate = () => (
   <Section id="solutions">
     <StyledContainer>
       <Subtitle>Solutions</Subtitle>
       <SectionTitle>Axle enables new use cases</SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
+          <FeatureTitle>Predictive maintenance</FeatureTitle>
+          <FeatureText>
+            Axle can enable remote fleet diagnostics to maximize vehicle uptime.
+          </FeatureText>
+        </FeatureItem>
+        <FeatureItem>
           <FeatureTitle>Telematics</FeatureTitle>
           <FeatureText>
-            Axle can enable remote fleet diagnostics and monitoring to maximize vehicle uptime and predictive maintenance.
+            Axle lets developers build tools to manage and understand driver behavior.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Self-Driving</FeatureTitle>
+          <FeatureTitle>Fleet Management</FeatureTitle>
           <FeatureText>
-            Axle unlocks driving controls such as steering and acceleration for aftermarket self-driving systems.
+            Axle gives developers tracking and monitoring data for fleet insights.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Security</FeatureTitle>
+          <FeatureTitle>Sustainability</FeatureTitle>
           <FeatureText>
-            Axle equips the vehicle with an intrusion detection system, identifying and blocking malicious commands.
+            Axle pulls data from multiple resources for new sustainable tooling.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Entertainment</FeatureTitle>
+          <FeatureTitle>Logistics</FeatureTitle>
           <FeatureText>
-            Axle can control vehicle infotainment and media systems enabling new forms of entertainment.
+            Axle provides insight into the the shipping and delivery of packages on vehicles.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>Insurance</FeatureTitle>
-          <FeatureText>Axle can help identify the driving style and safety parameters of the vehicle owner.</FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Car Sharing</FeatureTitle>
           <FeatureText>
-            Axle allows for remote access and monitoring for a vehicle, simplifying onboarding for car sharing networks.
+            Axle can help identify the driving style and safety parameters of the vehicle owner.
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>
@@ -48,7 +50,7 @@ const Solutions = () => (
   </Section>
 )
 
-export default Solutions
+export default SolutionsClimate
 
 const StyledContainer = styled(Container)``
 

@@ -1,25 +1,25 @@
 import React from "react"
 import styled from "styled-components"
-import { FaLaptopCode, FaShieldAlt, FaTruckMoving } from 'react-icons/fa';
+import { FaLaptopCode, FaServer, FaTruckMoving } from 'react-icons/fa';
 
 import { Section, Container } from "../global"
 
-const Product = () => (
+const ProductClimate = () => (
   <Section id="product">
     <StyledContainer>
       <Subtitle>Product</Subtitle>
       <SectionTitle>Axle makes developing universal vehicle applications easy</SectionTitle>
       <ProductGrid>
         <FeatureItem>
-          <FeatureTitle><FaLaptopCode/></FeatureTitle>
+          <FeatureTitle><FaServer/></FeatureTitle>
           <FeatureText>
-            Reduce development time and costs.
+            Integrate across providers seamlessly.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle><FaShieldAlt/></FeatureTitle>
+          <FeatureTitle><FaLaptopCode/></FeatureTitle>
           <FeatureText>
-            Secure critical vehicle functions.
+            Reduce development time and costs.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
@@ -33,7 +33,7 @@ const Product = () => (
   </Section>
 )
 
-export default Product
+export default ProductClimate
 
 const StyledContainer = styled(Container)``
 

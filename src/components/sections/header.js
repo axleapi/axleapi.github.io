@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 import { Container } from "../global"
 
-const Header = () => {
+const HeaderClimate = () => {
   const data = useStaticQuery(graphql`
     query {
       file(sourceInstanceName: { eq: "product" }, name: { eq: "axle-header" }) {
@@ -28,10 +28,10 @@ const Header = () => {
         <Flex>
           <HeaderTextGroup>
             <h1>
-              Universal API to securely control and monitor any vehicle
+              Universal API to access data from any vehicle
             </h1>
             <h2>
-              Axle's API lets developers securely and universally access vehicle controls and diagnostics. Sign up to
+              Axle's API lets developers universally integrate telematics data from multiple sources. Sign up to
               get early access.
             </h2>
             <HeaderForm action="https://axleapi.us5.list-manage.com/subscribe/post" method="POST">
@@ -54,7 +54,7 @@ const Header = () => {
     </HeaderWrapper>
   )
 }
-export default Header
+export default HeaderClimate
 
 const HeaderWrapper = styled.header`
   background-color: #f8f8f8;
