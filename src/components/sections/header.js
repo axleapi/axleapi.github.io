@@ -2,22 +2,11 @@ import React from "react"
 import styled from "styled-components"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
+import axleDiagram from "../../images/product/Axle Diagram_Animated_gray2.gif"
 
 import { Container } from "../global"
 
-const HeaderClimate = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(sourceInstanceName: { eq: "product" }, name: { eq: "axle-header" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_tracedSVG
-          }
-        }
-      }
-    }
-  `)
-
+const Header = () => {
   const handleSubmit = event => {
     event.preventDefault()
   }
@@ -46,7 +35,7 @@ const HeaderClimate = () => {
             </FormSubtitle> */}
           </HeaderTextGroup>
           <ImageWrapper>
-            <StyledImage fluid={data.file.childImageSharp.fluid} />
+            <StyledImage src={axleDiagram} />
             <br />
           </ImageWrapper>
         </Flex>
@@ -54,10 +43,10 @@ const HeaderClimate = () => {
     </HeaderWrapper>
   )
 }
-export default HeaderClimate
+export default Header
 
 const HeaderWrapper = styled.header`
-  background-color: #f8f8f8;
+  background-color: #f5f5f5;
   padding: 160px 0 80px 0;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
@@ -195,7 +184,7 @@ const ImageWrapper = styled.div`
   }
 `
 
-const StyledImage = styled(Img)`
+const StyledImage = styled.img`
   width: 500px;
   @media (max-width: ${props => props.theme.screen.md}) {
     width: 400px;
