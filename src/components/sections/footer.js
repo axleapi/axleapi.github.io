@@ -40,7 +40,7 @@ const Footer = () => (
       <Logo />
     </BrandContainer>
     <Copyright>
-      &copy; {new Date().getFullYear()} Axle Technologies LLC
+      &copy; {new Date().getFullYear()} Axle Technologies, Inc.
     </Copyright>
   </FooterWrapper>
 )
