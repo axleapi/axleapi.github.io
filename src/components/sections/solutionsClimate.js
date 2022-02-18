@@ -36,7 +36,7 @@ const SolutionsClimate = () => (
         <FeatureItem>
           <FeatureTitle>Logistics</FeatureTitle>
           <FeatureText>
-            Axle provides insight into the the shipping and delivery of packages on vehicles.
+            Axle provides insight into the shipping and delivery of packages on vehicles.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
