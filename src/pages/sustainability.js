@@ -13,7 +13,7 @@ import DevelopersClimate from "../components/sections/developersClimate"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Climate" />
+    <SEO title="Sustainability" />
     <Navigation />
     <HeaderClimate />
     <ProductClimate />
