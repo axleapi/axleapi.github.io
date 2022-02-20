@@ -191,6 +191,6 @@ const StyledImage = styled.img`
   }
   @media (max-width: ${props => props.theme.screen.sm}) {
     width: 300px;
-    display: none;
+    padding-bottom: 20px;
   }
 `

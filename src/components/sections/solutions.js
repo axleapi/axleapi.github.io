@@ -42,7 +42,7 @@ const SolutionsClimate = () => (
         <FeatureItem>
           <FeatureTitle>Insurance</FeatureTitle>
           <FeatureText>
-            Axle can help identify the driving style and safety parameters of the vehicle owner.
+            Axle can identify the driving style and safety parameters of the vehicle owner.
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>
