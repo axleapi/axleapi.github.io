@@ -95,7 +95,7 @@ const Flex = styled.div`
   grid-template-columns: 1fr 1fr;
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
-    grid-gap: 64px;
+    // grid-gap: 64px;
   }
 `
 
@@ -191,6 +191,6 @@ const StyledImage = styled.img`
   }
   @media (max-width: ${props => props.theme.screen.sm}) {
     width: 300px;
-    padding-bottom: 20px;
+    padding-bottom: 80px;
   }
 `
