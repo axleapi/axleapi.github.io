@@ -16,15 +16,15 @@ const SolutionsClimate = () => (
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Telematics</FeatureTitle>
+          <FeatureTitle>Fuel Cards</FeatureTitle>
           <FeatureText>
-            Axle lets developers build tools to manage and understand driver behavior.
+            Axle lets developers use telematics for fraud detection, early payouts, and invoice validation.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>Fleet Management</FeatureTitle>
           <FeatureText>
-            Axle gives developers tracking and monitoring data for fleet insights.
+            Axle gives developers tracking and monitoring data for fleet and driver insights.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
