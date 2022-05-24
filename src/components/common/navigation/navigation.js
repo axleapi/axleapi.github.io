@@ -15,6 +15,7 @@ import {
   Mobile,
   ActionsContainer,
 } from "./style"
+import { Link } from "gatsby"
 
 const NAV_ITEMS = ["Product", "Developers", "Solutions", "Get Started"]
 
@@ -65,6 +66,7 @@ export default class Navigation extends Component {
         {NAV_ITEMS.map(navItem => (
           <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
         ))}
+        <NavItem key="careers"><Link href={"https://www.notion.so/axleapi/Careers-at-Axle-df4daa9afb064b20b94acc2c4c4417bc"}>Careers</Link></NavItem>
       </Scrollspy>
     </NavListWrapper>
   )
