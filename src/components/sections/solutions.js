@@ -3,56 +3,35 @@ import styled from "styled-components"
 
 import { Section, Container } from "../global"
 
-const SolutionsClimate = () => (
-  <Section id="solutions">
-    <StyledContainer>
+const Solutions = () => (
+  <StyledSection id="solutions">
+    <Container>
       <Subtitle>Solutions</Subtitle>
-      <SectionTitle>Axle enables new use cases</SectionTitle>
+      <SectionTitle>Axle enables new use cases in</SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
-          <FeatureTitle>Predictive maintenance</FeatureTitle>
-          <FeatureText>
-            Axle can enable remote fleet diagnostics to maximize vehicle uptime.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Fuel Cards</FeatureTitle>
-          <FeatureText>
-            Axle lets developers use telematics for fraud detection, early payouts, and invoice validation.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
           <FeatureTitle>Fleet Management</FeatureTitle>
-          <FeatureText>
-            Axle gives developers tracking and monitoring data for fleet and driver insights.
-          </FeatureText>
+        </FeatureItem>
+        <FeatureItem>
+          <FeatureTitle>Fuel Tracking</FeatureTitle>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>Sustainability</FeatureTitle>
-          <FeatureText>
-            Axle pulls data from multiple resources for new sustainable tooling.
-          </FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>Logistics</FeatureTitle>
-          <FeatureText>
-            Axle provides insight into the shipping and delivery of packages on vehicles.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Insurance</FeatureTitle>
-          <FeatureText>
-            Axle can identify the driving style and safety parameters of the vehicle owner.
-          </FeatureText>
         </FeatureItem>
       </FeaturesGrid>
-    </StyledContainer>
-  </Section>
+    </Container>
+  </StyledSection>
 )
 
-export default SolutionsClimate
+export default Solutions
 
-const StyledContainer = styled(Container)``
+
+const StyledSection = styled(Section)`
+background: ${props => props.theme.color.background.light};
+`
 
 const SectionTitle = styled.h3`
   color: ${props => props.theme.color.primary};

@@ -17,7 +17,7 @@ import {
 } from "./style"
 import { Link } from "gatsby"
 
-const NAV_ITEMS = ["Product", "Developers", "Solutions", "Get Started"]
+const NAV_ITEMS = ["Product", "Solutions"]
 
 export default class Navigation extends Component {
   state = {

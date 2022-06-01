@@ -17,10 +17,10 @@ const Header = () => {
         <Flex>
           <HeaderTextGroup>
             <h1>
-              Universal API to access data from any vehicle
+              A universal data platform for trucking
             </h1>
             <h2>
-              Axle's API lets developers universally integrate telematics data from multiple sources. Sign up to
+              Axle lets developers integrate telematics data from multiple sources. Sign up to
               get early access.
             </h2>
             <HeaderForm action="https://axleapi.us5.list-manage.com/subscribe/post" method="POST">
@@ -34,10 +34,7 @@ const Header = () => {
               <FormSubtitleLink to="/">Sign in</FormSubtitleLink>
             </FormSubtitle> */}
           </HeaderTextGroup>
-          <ImageWrapper>
-            <StyledImage src={axleDiagram} />
-            <br />
-          </ImageWrapper>
+
         </Flex>
       </Container>
     </HeaderWrapper>
@@ -62,7 +59,9 @@ const Subtitle = styled.h5`
 `
 
 const HeaderTextGroup = styled.div`
-  margin: 0;
+  margin: 0 auto;
+  width: 90%;
+  padding: 5vh 0;
 
   > div {
     width: 120%;
@@ -89,7 +88,6 @@ const HeaderTextGroup = styled.div`
 `
 
 const Flex = styled.div`
-  display: grid;
   justify-content: space-between;
   align-content: center;
   grid-template-columns: 1fr 1fr;
