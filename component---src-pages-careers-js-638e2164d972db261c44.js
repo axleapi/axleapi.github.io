@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"6KBY":function(a,n,o){"use strict";o.r(n);o("q1tI"),o("CyKR"),o("ohv3"),o("mxZk"),o("f6FA"),o("YI1k"),o("B0B8"),o("LPyL"),o("5T2x"),o("Cl7a"),o("Wbzz");n.default=function(){window.location.href="https://axleapi.notion.site/Careers-at-Axle-df4daa9afb064b20b94acc2c4c4417bc"}}}]);
+//# sourceMappingURL=component---src-pages-careers-js-638e2164d972db261c44.js.map
